@@ -1,0 +1,45 @@
+
+$margin-unit: 8;
+$margin-size: 1;
+
+@while $margin-unit <=80 {
+    .margin-#{$margin-size} {
+        margin: ($margin-unit * 1px);
+    }
+
+    .margin-x-#{$margin-size} {
+        margin-left: ($margin-unit * 1px);
+        margin-right: ($margin-unit * 1px);
+    }
+
+    .margin-y-#{$margin-size} {
+        margin-top: ($margin-unit * 1px);
+        margin-bottom: ($margin-unit * 1px);
+    }
+
+    $margin-unit: $margin-unit + 8;
+    $margin-size: $margin-size + 1;
+}
+
+$padding-unit: 8;
+$padding-size: 1;
+
+@while $padding-unit <=80 {
+    .padding-#{$padding-size} {
+        padding: ($padding-unit * 1px);
+    }
+
+    .padding-x-#{$padding-size} {
+        padding-left: ($padding-unit * 1px);
+        padding-right: ($padding-unit * 1px);
+    }
+
+    .padding-y-#{$padding-size} {
+        padding-top: ($padding-unit * 1px);
+        padding-bottom: ($padding-unit * 1px);
+    }
+
+    $padding-unit: $padding-unit + 8;
+    $padding-size: $padding-size + 1;
+}
+
